@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-express-rest-api",
+  "version": "1.0.0",
+  "description": "Node.js, Express.js, MongoDB",
+  "main": "server.js",
+  "repository": "https://github.com/MAbdurahman/nodejs-express-rest-api.git",
+  "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "node server.js"
+
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.11"
+  },
+  "nodemonConfig": {
+    "delay": 2000
+  }
+}
