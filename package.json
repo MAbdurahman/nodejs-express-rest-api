@@ -6,10 +6,11 @@
   "repository": "https://github.com/MAbdurahman/nodejs-express-rest-api.git",
   "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "server": "nodemon server.js",
-    "start": "node server.js"
-
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=development& nodemon server.js",
+    "prod": "SET NODE_ENV=production& node server.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -17,6 +18,7 @@
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.5",
     "morgan": "^1.10.1"
