@@ -6,7 +6,8 @@ const connectDatabase = require('./configs/databaseConfig.js');*/
 
 import dotenv from 'dotenv';
 import colors from 'colors';
-import app from './app/app.js'
+import app from './app/app.js';
+import connectDatabase from './configs/databaseConfig.js';
 
 
 /************************* configure setup *************************/
@@ -27,7 +28,7 @@ const ADDENDUM = `\t\t...press Ctrl+C to terminate.\n`.white;
 const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost';
 
 /************************* connect MongoDB and Cloudinary *************************/
-/*connectDatabase().then(() => {});*/
+connectDatabase().then(() => {});
 
 
 /********************************** app listening *********************************/
