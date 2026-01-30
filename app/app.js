@@ -53,10 +53,12 @@ app.use(express.urlencoded({extended: true})); // for parsing application/x-www-
 
 /*************************** import all routes ***************************/
 import homeRoute from '../routes/homePageRoute.js';
+import authRoutes from '../routes/authRoute.js';
 
 
 /********************************* routes *********************************/
 app.use('/', homeRoute);
+app.use('/api/v1/auth', authRoutes);
 
 
 export default app;
