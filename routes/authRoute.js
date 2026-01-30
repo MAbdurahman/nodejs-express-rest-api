@@ -4,7 +4,11 @@ import { signUpUser, signInUser, signOutUser } from '../controllers/authControll
 
 
 const router = express.Router();
+
+
 router.post('/sign-up', signUpUser);
 router.post('/sign-in', signInUser);
-router.get('/sign-out', signOutUser);
+router.post('/sign-out', signOutUser);
+
+
 export default router;

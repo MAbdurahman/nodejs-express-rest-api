@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "SET NODE_ENV=development& nodemon server.js",
-    "prod": "SET NODE_ENV=production& node server.js"
+    "prod": "SET NODE_ENV=production& node server.js",
+    "seed:data": "node ./utils/seederUtils.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",

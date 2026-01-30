@@ -1,107 +1,105 @@
-import bcrypt from 'bcrypt';
 
-const salt = await bcrypt.genSalt(10);
 
 const usersData = [
 
    {
-      name: 'Mahdi Abdurrahman',
-      email: 'mdbdrrhm5@gmail.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      fullname: 'Mahdi Abdurrahman',
+      email: 'mahdi@example.com',
+      password: 'Aa!2qwer',
       role: 'admin'
    },
    // Female Users
    {
-      name: 'Emma Thompson',
+      fullname: 'Emma Thompson',
       email: 'emma@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Olivia Miller',
+      fullname: 'Olivia Miller',
       email: 'olivia@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Sophia Davis',
+      fullname: 'Sophia Davis',
       email: 'sophia@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Ava Wilson',
+      fullname: 'Ava Wilson',
       email: 'ava@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Isabella Brown',
+      fullname: 'Isabella Brown',
       email: 'isabella@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Mia Johnson',
+      fullname: 'Mia Johnson',
       email: 'mia@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Charlotte Williams',
+      fullname: 'Charlotte Williams',
       email: 'charlotte@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Amelia Garcia',
+      fullname: 'Amelia Garcia',
       email: 'amelia@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
 
    // Male Users
    {
-      name: 'James Anderson',
+      fullname: 'James Anderson',
       email: 'james@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'William Clark',
+      fullname: 'William Clark',
       email: 'william@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Benjamin Taylor',
+      fullname: 'Benjamin Taylor',
       email: 'benjamin@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
 
    },
    {
-      name: 'Lucas Moore',
+      fullname: 'Lucas Moore',
       email: 'lucas@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Henry Jackson',
+      fullname: 'Henry Jackson',
       email: 'henry@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Alexander Martin',
+      fullname: 'Alexander Martin',
       email: 'alexander@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    },
    {
-      name: 'Daniel Rodriguez',
+      fullname: 'Daniel Rodriguez',
       email: 'daniel@example.com',
-      password: await bcrypt.hash('Aa!2qwer', salt),
+      password: 'Aa!2qwer',
       role: 'user'
    }
 

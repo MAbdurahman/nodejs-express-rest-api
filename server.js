@@ -1,9 +1,4 @@
 /***************************** imports *****************************/
-/*const dotenv = require('dotenv');
-const colors = require('colors');
-const app = require('./app/app.js');
-const connectDatabase = require('./configs/databaseConfig.js');*/
-
 import dotenv from 'dotenv';
 import colors from 'colors';
 import app from './app/app.js';

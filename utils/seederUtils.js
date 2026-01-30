@@ -1,9 +1,9 @@
 /************************* imports *************************/
 import dotenv from 'dotenv';
 import colors from 'colors';
-import connectDatabase from '../configs/databaseConfig.js';
-import User from '../models/userModel.js';
-import users from 'data/userData.js';
+import connectDatabase from './../configs/databaseConfig.js';
+import User from './../models/userModel.js';
+import users from './../data/userData.js';
 
 /************************* configure setup *************************/
 dotenv.config({path: './configs/config.env', quiet: true});
