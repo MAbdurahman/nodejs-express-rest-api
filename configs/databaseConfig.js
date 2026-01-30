@@ -1,7 +1,4 @@
 /************************* imports *************************/
-/*const mongoose = require('mongoose');
-const colors = require('colors');*/
-
 import colors from 'colors';
 import mongoose from 'mongoose';
 

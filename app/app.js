@@ -1,19 +1,12 @@
 /************************* imports *************************/
-import cookieParser from 'cookie-parser';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import colors from 'colors';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 
-/*const cookieParser = require('cookie-parser');
-const express = require('express');
-const cors = require('cors');
-const morgan = require('morgan');
-const helmet = require('helmet');
-const colors = require('colors');
-const dotenv = require('dotenv');*/
 /************************* setup config file *************************/
 if (process.env.NODE_ENV !== 'production') {
    dotenv.config({path: './configs/config.env', quiet: true});
@@ -60,7 +53,6 @@ app.use(express.urlencoded({extended: true})); // for parsing application/x-www-
 
 /*************************** import all routes ***************************/
 import homeRoute from '../routes/homePageRoute.js';
-
 
 
 /********************************* routes *********************************/
