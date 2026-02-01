@@ -12,26 +12,19 @@ const userSchema = new Schema({
       fullname: {
          type: String,
          trim: true,
-         required: [true, 'First and last name are required!'],
-         minlength: [4, 'Full name must be at least 4 characters!'],
-         maxLength: [32, 'Full name cannot exceed 32 characters!'],
-         match: [fullname_pattern, 'Enter a valid first and last name!']
+         required: true
       },
       email: {
          type: String,
          trim: true,
-         lowercase: [true, 'Email must be in lowercase!'],
          required: [true, 'Email is required!'],
-         unique: [true, 'Email already exists!'],
-         match: [email_pattern, 'Enter a valid email!']
+         unique: [true, 'Email already exists!']
+
       },
       password: {
          type: String,
          trim: true,
-         required: [true, 'Password is required!'],
-         minlength: [8, 'Password must be at least 8 characters!'],
-         maxlength: [32, 'Password cannot exceed 32 characters!'],
-         match: [password_pattern, 'Enter a valid password!']
+         required: [true, 'Password is required!']
       },
       role: {
          type: String,
@@ -42,5 +35,5 @@ const userSchema = new Schema({
    {timestamps: true}
 );
 
-const User = new model('user', userSchema);
+const User = new model('User', userSchema);
 export default User;
